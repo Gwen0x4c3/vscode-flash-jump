@@ -1,0 +1,433 @@
+{
+  "name": "vscode-flash-jump",
+  "displayName": "VSCode Flash Jump",
+  "description": "flash.nvim-style jump labels for fast VSCodeVim navigation.",
+  "version": "0.1.0",
+  "publisher": "Gwen0x4c3",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:flashFind.start",
+    "onCommand:flashFind.cancel",
+    "onCommand:flashFind.backspace"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flashFind.start",
+        "title": "VSCode Flash Jump: Start"
+      },
+      {
+        "command": "flashFind.cancel",
+        "title": "VSCode Flash Jump: Cancel"
+      },
+      {
+        "command": "flashFind.backspace",
+        "title": "VSCode Flash Jump: Backspace"
+      },
+      {
+        "command": "flashFind.input",
+        "title": "VSCode Flash Jump: Input"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "flashFind.cancel",
+        "key": "escape",
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.backspace",
+        "key": "backspace",
+        "mac": "backspace",
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "a",
+        "args": { "text": "a" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "b",
+        "args": { "text": "b" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "c",
+        "args": { "text": "c" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "d",
+        "args": { "text": "d" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "e",
+        "args": { "text": "e" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "f",
+        "args": { "text": "f" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "g",
+        "args": { "text": "g" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "h",
+        "args": { "text": "h" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "i",
+        "args": { "text": "i" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "j",
+        "args": { "text": "j" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "k",
+        "args": { "text": "k" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "l",
+        "args": { "text": "l" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "m",
+        "args": { "text": "m" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "n",
+        "args": { "text": "n" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "o",
+        "args": { "text": "o" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "p",
+        "args": { "text": "p" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "q",
+        "args": { "text": "q" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "r",
+        "args": { "text": "r" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "s",
+        "args": { "text": "s" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "t",
+        "args": { "text": "t" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "u",
+        "args": { "text": "u" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "v",
+        "args": { "text": "v" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "w",
+        "args": { "text": "w" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "x",
+        "args": { "text": "x" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "y",
+        "args": { "text": "y" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "z",
+        "args": { "text": "z" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "0",
+        "args": { "text": "0" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "1",
+        "args": { "text": "1" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "2",
+        "args": { "text": "2" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "3",
+        "args": { "text": "3" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "4",
+        "args": { "text": "4" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "5",
+        "args": { "text": "5" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "6",
+        "args": { "text": "6" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "7",
+        "args": { "text": "7" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "8",
+        "args": { "text": "8" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "9",
+        "args": { "text": "9" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "-",
+        "args": { "text": "-" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+-",
+        "args": { "text": "_" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": ".",
+        "args": { "text": "." },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": ",",
+        "args": { "text": "," },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+,",
+        "args": { "text": "<" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+.",
+        "args": { "text": ">" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "/",
+        "args": { "text": "/" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+/",
+        "args": { "text": "?" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": ";",
+        "args": { "text": ";" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+;",
+        "args": { "text": ":" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "=",
+        "args": { "text": "=" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+=",
+        "args": { "text": "+" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+1",
+        "args": { "text": "!" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+2",
+        "args": { "text": "@" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+3",
+        "args": { "text": "#" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+4",
+        "args": { "text": "$" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+5",
+        "args": { "text": "%" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+6",
+        "args": { "text": "^" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+7",
+        "args": { "text": "&" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+8",
+        "args": { "text": "*" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+9",
+        "args": { "text": "(" },
+        "when": "editorTextFocus && flashFind.active"
+      },
+      {
+        "command": "flashFind.input",
+        "key": "shift+0",
+        "args": { "text": ")" },
+        "when": "editorTextFocus && flashFind.active"
+      }
+    ],
+    "configuration": {
+      "title": "VSCode Flash Jump",
+      "properties": {
+        "flashFind.labels": {
+          "type": "string",
+          "default": "asdfghjklqwertyuiopzxcvbnm",
+          "description": "Characters used to generate jump labels."
+        },
+        "flashFind.maxMatches": {
+          "type": "number",
+          "default": 200,
+          "minimum": 1,
+          "maximum": 1000,
+          "description": "Maximum visible matches to label."
+        },
+        "flashFind.caseSensitive": {
+          "type": "boolean",
+          "default": false,
+          "description": "Search with case-sensitive literal matching."
+        },
+        "flashFind.minQueryLength": {
+          "type": "number",
+          "default": 1,
+          "minimum": 1,
+          "maximum": 16,
+          "description": "Minimum query length before showing matches."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {}
+}
