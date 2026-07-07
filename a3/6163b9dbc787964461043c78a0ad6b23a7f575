@@ -1,0 +1,21 @@
+package.json
+  s_833aecd5eddd65::t_87cf03dd06bd28 7-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "a36163b9dbc787964461043c78a0ad6b23a7f575",
+  "prompts": {},
+  "sessions": {
+    "s_833aecd5eddd65": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f3aa7-f3c0-7921-9fd4-5ebf4b71276d",
+        "model": "unknown"
+      },
+      "human_author": "Gwen0x4c3 <liguoen@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}
