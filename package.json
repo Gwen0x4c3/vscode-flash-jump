@@ -4,6 +4,10 @@
   "description": "flash.nvim-style jump labels for fast VSCodeVim navigation.",
   "version": "0.1.0",
   "publisher": "Gwen0x4c3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gwen0x4c3/vscode-flash-jump.git"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
